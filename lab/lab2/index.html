@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 2</title>
+
+  <style>
+    .container div {
+      margin-bottom: 20px;
+      width: 100%;
+      
+    }
+
+    .task2 img {
+      width: 300px;
+    }
+
+    #table1 td {
+      background-color: green;
+    }
+
+    .task7 table {
+      text-align: center;
+    }
+
+    .task7 table tr td:first-child {
+      text-align: left;
+    }
+
+    .task7 table tr:nth-child(odd) {
+      background-color: lightgreen;
+    }
+
+    .task7 table {
+      border-collapse: collapse;
+    }
+
+    .task9 table {
+
+      border-collapse: collapse;
+      width: 500px;
+      height: 250px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .task9 table tr {
+      text-align: left;
+
+    }
+
+    #layout tr:first-child td:nth-child(2) {
+
+      background-color: orangered;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+
+    }
+
+    #layout tr:nth-child(3) {
+
+      background-color: orangered;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+
+    }
+
+    .layout-list ul {
+
+      margin-top: -380px;
+      margin-left: 200px;
+
+
+
+
+
+
+    }
+
+    .layout-list {
+      height: 100px;
+
+    }
+
+
+
+    .task10 table,
+    th,
+    td {
+
+      border: 1px solid black;
+
+    }
+
+    #layout {
+      background-color: orange;
+      border-collapse: collapse;
+
+
+    }
+
+    .layout-list li {
+      list-style-type: none;
+      display: inline-block;
+
+    }
+
+    .layout-list li img {
+      width: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="task1">
+      <h3>i</h3>
+      <table border="1">
+        <caption>
+          <b>Data List</b>
+        </caption>
+        <tr>
+          <th rowspan="2">About</th>
+          <th colspan="2">Average</th>
+          <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+          <th>height</th>
+          <th>weight</th>
+        </tr>
+        <tr>
+          <th>Males</th>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td rowspan="2">40%</td>
+        </tr>
+        <tr>
+          <th>Females</th>
+          <td>1.7</td>
+          <td>0.002</td>
+        </tr>
+        <tr>
+          <th>Others</th>
+          <td>1.5</td>
+          <td>0.00002</td>
+          <td>0.0001%</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task2">
+      <h3>ii</h3>
+      <table border="1" style="background-color: yellow">
+        <tr>
+          <th style="background-color: red">Column1</th>
+          <th>Column2</th>
+          <th>Column3</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Row 1 Cell 1</td>
+          <td>Row 1 Cell 2</td>
+          <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2 Cell 2</td>
+          <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img width=""
+              src="https://c4.wallpaperflare.com/wallpaper/97/237/71/nature-landscape-winter-snow-wallpaper-preview.jpg"
+              alt="img" />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task3">
+      <h3>iii</h3>
+      <table border="1">
+        <tr>
+          <td colspan="3" style="text-align: center">Top</td>
+        </tr>
+        <tr>
+          <td rowspan="2">way left</td>
+          <td>middle up</td>
+          <td rowspan="2">way right</td>
+        </tr>
+        <tr>
+          <td>middle down</td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task4">
+      <h3>iv</h3>
+      <table border="15" bordercolor="green">
+        <tr>
+          <td>
+            <table border="15" bordercolor="red">
+              <tr>
+                <td>
+                  <table border="15" bordercolor="yellow">
+                    <tr>
+                      <td>
+                        <table border="15" bordercolor="blue">
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="task5">
+      <h3>v</h3>
+      <table cellspacing="0" cellpadding="0" style="height: 200px" border="1">
+        <tr>
+          <td>data 1</td>
+          <td>data 1</td>
+          <td>data 1</td>
+
+          <!-- extra column for merging -->
+          <td></td>
+        </tr>
+        <tr>
+          <td>data 1</td>
+          <td colspan="2">data 2</td>
+
+          <!-- extra column for merging -->
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2">data 2</td>
+          <td colspan="2">data 2</td>
+
+          <!-- extra column for merging -->
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="2">
+            data 1 <br />
+            data 2
+          </td>
+          <td height="20"></td>
+        </tr>
+
+        <tr>
+          <td>data 1</td>
+
+          <!-- extra column for merging -->
+          <td></td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            data 3 <br />
+            data 3
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task6">
+      <h3>vi</h3>
+
+      <table border="1">
+        <tr></tr>
+        <td>1</td>
+        <td rowspan="2">2</td>
+        <td>3</td>
+
+        <tr>
+          <td>4</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task7">
+      <h3>vii</h3>
+
+      <table>
+        <tr style="font-size: x-large; font-style: italic">
+          <th colspan="6">My tech stock picks</th>
+        </tr>
+
+        <tr>
+          <th>NAME</th>
+          <th>SYMBOL</th>
+          <th>CURRENT</th>
+          <th>52WK HI</th>
+          <th>52WKLO</th>
+          <th>P/E RATIO</th>
+        </tr>
+
+        <tr>
+          <td>Microsoft</td>
+          <td>MSFT</td>
+          <td>86-3/8</td>
+          <td>119-15/16</td>
+          <td>75-1/2</td>
+          <td>56.09</td>
+        </tr>
+
+        <tr>
+          <td>Cisco Systems</td>
+          <td>CSCO</td>
+          <td>72-1/8</td>
+          <td>82</td>
+          <td>24-13/16</td>
+          <td>400</td>
+        </tr>
+
+        <tr>
+          <td>America Online</td>
+          <td>AOL</td>
+          <td>63</td>
+          <td>95-13/16</td>
+          <td>38-15/32</td>
+          <td>350.00</td>
+        </tr>
+
+        <tr>
+          <td>Qwest Communication</td>
+          <td>Q</td>
+          <td>44-7/16</td>
+          <td>66</td>
+          <td>25-3/4</td>
+          <td>74.06</td>
+        </tr>
+
+        <tr>
+          <td>Dell Computers</td>
+          <td>DELL</td>
+          <td>53-59/64</td>
+          <td>59-11/16</td>
+          <td>31-3/8</td>
+          <td>86.97</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task8">
+      <h3>viii</h3>
+
+      <table border="5" bordercolor="blue">
+        <tr>
+          <td>I am outer table</td>
+          <td>
+            <table border="5" bordercolor="green">
+              <tr>
+                <td>I am the first row of first table</td>
+              </tr>
+              <tr>
+                <td>I am the second row of first table</td>
+              </tr>
+              <tr>
+                <td>I am the third row of first table</td>
+              </tr>
+              <tr>
+                <td>I am the forth row of first table</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="task9">
+      <h3>ix</h3>
+
+      <table border="1px">
+        <caption>Invoice</caption>
+        <tr>
+          <th>Item/Desc.</th>
+          <th>Qty.</th>
+          <th>@</th>
+          <th>Price</th>
+        </tr>
+
+        <tr>
+          <td>Paperclips (Box)</td>
+          <td>100</td>
+          <td>1.15</td>
+          <td>115.00</td>
+        </tr>
+
+        <tr>
+          <td>Paper (Case)</td>
+          <td>10</td>
+          <td>45.99</td>
+          <td>459.90</td>
+        </tr>
+
+        <tr>
+          <td>Wasterpaper <br> Baskets</td>
+          <td>2</td>
+          <td>17.99</td>
+          <td>35.98</td>
+        </tr>
+
+        <tr>
+          <td colspan="3">Subtotal</td>
+          <td>610.88</td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Tax</td>
+          <td>7%</td>
+          <td>42.76</td>
+        </tr>
+
+        <tr>
+          <td colspan="3">Total</td>
+          <td>653.64</td>
+        </tr>
+      </table>
+
+    </div>
+    <div clatss="task10">
+      <h3>x</h3>
+      <table id="layout">
+        <tr id="nav">
+          <td width="5%" height="100px"></td>
+          <td width="80%">East West University</td>
+          <td width="15%">
+            <img width="100%" src="https://pbs.twimg.com/profile_images/1060665762484936704/3EIr1dzI_400x400.jpg"
+              alt="">
+          </td>
+        </tr>
+
+        <tr>
+          <td width="5%" height="800px"></td>
+          <td width="80%">
+
+            <div class="layout-list">
+              <ul>
+                <li>
+                  <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="">
+                </li>
+                <li>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiHnGJvgESdix23rJWVPe55h59aD0tnwENkA&usqp=CAU"
+                    alt="">
+                </li>
+                <li>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
+                    alt="">
+                </li>
+              </ul>
+
+              <h2>Why East West University</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem id, error facilis atque quisquam quas
+                nesciunt voluptatum, explicabo quia aspernatur, odio earum deserunt rerum ipsum vel? Nobis mollitia,
+                accusamus voluptatibus ducimus rem saepe sapiente officia atque libero, quam eos possimus at error.
+                Soluta, aut! Porro dignissimos ut cumque nobis placeat est velit, expedita veniam aperiam commodi
+                molestiae hic explicabo dolorum ipsam cupiditate laudantium alias, soluta voluptatibus magnam, fugiat
+                nisi unde enim. Ullam modi autem voluptate, explicabo est architecto vitae velit consectetur aperiam
+                quis suscipit distinctio, doloribus fugit voluptatibus nulla. Aliquam expedita maiores nam facilis
+                excepturi quia doloremque corrupti quam ab!</p>
+
+              <h2>Why East West University</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem id, error facilis atque quisquam quas
+                nesciunt voluptatum, explicabo quia aspernatur, odio earum deserunt rerum ipsum vel? Nobis mollitia,
+                accusamus voluptatibus ducimus rem saepe sapiente officia atque libero, quam eos possimus at error.
+                Soluta, aut! Porro dignissimos ut cumque nobis placeat est velit, expedita veniam aperiam commodi
+                molestiae hic explicabo dolorum ipsam cupiditate laudantium alias, soluta voluptatibus magnam, fugiat
+                nisi unde enim. Ullam modi autem voluptate, explicabo est architecto vitae velit consectetur aperiam
+                quis suscipit distinctio, doloribus fugit voluptatibus nulla. Aliquam expedita maiores nam facilis
+                excepturi quia doloremque corrupti quam ab!</p>
+
+            </div>
+
+          </td>
+          <td width="15%"></td>
+        </tr>
+
+        <tr>
+          <td width="5%" height="20px"></td>
+          <td width="80%">Copyright@East West University</td>
+          <td width="15%"></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
