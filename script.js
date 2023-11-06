@@ -1,5 +1,5 @@
 // Data for lab folder links and project folder links
-import { labLinks } from "./links.js";
+import { labLinks, githubLinks } from "./links.js";
 
 // const projectLinks = [
 //   { name: "Project 1", url: "projects/project1/index.html" },
@@ -26,5 +26,6 @@ function addLinks(sectionId, links) {
 // Call the function to add lab folder links and project folder links when the page loads
 window.addEventListener("load", () => {
   addLinks("lab-links", labLinks);
+  addLinks("codes-links",githubLinks)
   //   addLinks("project-links", projectLinks);
 });

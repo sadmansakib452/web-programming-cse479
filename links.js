@@ -12,4 +12,11 @@ const labLinks = [
 //   // Add more project links here
 // ];
 
-export { labLinks };
+const githubLinks = [
+  {
+    name: "Github",
+    url: "https://github.com/sadmansakib452/web-programming-cse479",
+  },
+];
+
+export { labLinks, githubLinks };
