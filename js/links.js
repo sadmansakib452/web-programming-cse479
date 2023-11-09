@@ -1,26 +1,35 @@
 export const linksData = [
   {
-    section: "Lab",
+    section: "Codes",
     links: [
-      { title: "Lab 1 - Create a CV using HTML and CSS",
-        url: "lab/lab1/index.html", 
-    
-    },
-      { title: "Lab 2 - Table exercise using html & css",
-        url: "lab/lab2/index.html" 
-    
-    },
       {
-        title: "Lab 3 - Advanced Topics",
+        title: "Github",
+        url: "https://github.com/sadmansakib452/web-programming-cse479",
+      },
+    ],
+  },
+  {
+    section: "Lab (Output)",
+    links: [
+      {
+        title: "Lab 1 - Create a CV using HTML and CSS",
+        url: "lab/lab1/index.html",
+      },
+      {
+        title: "Lab 2 - Table exercise using html & css",
+        url: "lab/lab2/index.html",
+      },
+      {
+        title: "Lab 3 - Basic PHP",
         links: [
-          { title: "Task 1", url: "lab/lab3/task1.html" },
-          { title: "Task 2", url: "lab/lab3/task2.html" },
-          { title: "Task 3", url: "lab/lab3/task3.html" },
-          { title: "Task 4", url: "lab/lab3/task4.html" },
-          { title: "Task 5", url: "lab/lab3/task5.html" },
-          { title: "Task 6", url: "lab/lab3/task6.html" },
-          { title: "Task 7", url: "lab/lab3/task7.html" },
-          { title: "Task 8", url: "lab/lab3/task8.html" },
+          { title: "Task 1", url: "images/lab3/task1.jpg" },
+          { title: "Task 2", url: "images/lab3/task2.jpg" },
+          { title: "Task 3", url: "images/lab3/task3.jpg" },
+          { title: "Task 4", url: "images/lab3/task4.jpg" },
+          { title: "Task 5", url: "images/lab3/task5.jpg" },
+          { title: "Task 6", url: "images/lab3/task6.jpg" },
+          { title: "Task 7", url: "images/lab3/task7.jpg" },
+          { title: "Task 8", url: "images/lab3/task8.jpg" },
         ],
       },
     ],
