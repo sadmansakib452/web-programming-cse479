@@ -3,11 +3,11 @@ export const linksData = [
     section: "Lab",
     links: [
       { title: "Lab 1 - Create a CV using HTML and CSS",
-        url: "../lab/lab1/index.html", 
+        url: "lab/lab1/index.html", 
     
     },
       { title: "Lab 2 - Table exercise using html & css",
-        url: "../lab/lab2/index.html" 
+        url: "lab/lab2/index.html" 
     
     },
       {
