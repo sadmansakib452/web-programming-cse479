@@ -3,41 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sadman Sakib || Web Programming</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Web Programming Course</title>
 </head>
 <body>
-    <div class="container">
-        <h1>East West University</h1>
-        <p>Name: Sadman Sakib</p>
-        <p>Course: Web Programming (CSE479)</p>
-        <p>ID: 2019-3-60-020</p>
-
-           <!-- Codes -->
-        <section class="section">
-            <h2 style="color: red;">Codes</h2>
-            <ul id="codes-links">
-                <!-- Links will be added dynamically using JavaScript -->
-            </ul>
-        </section>
-        
-        <!-- Lab Links Section -->
-        <section class="section">
-            <h2>Lab Folder Links</h2>
-            <ul id="lab-links">
-                <!-- Links will be added dynamically using JavaScript -->
-            </ul>
-        </section>
-
-        <!-- Project Links Section -->
-        <!-- <section class="section">
-            <h2>Project Folder Links</h2>
-            <ul id="project-links">
-                
-            </ul>
-        </section>
-         -->
-    </div>
-    <script type="module" src="script.js"></script>
+    <header class="app-header">
+        <h1>Web Programming Course</h1>
+        <div class="course-info">
+            <p>University: East West University, Dhaka, Bangladesh</p>
+            <p>Name: Sadman Sakib</p>
+            <p>ID: 2019-3-60-020</p>
+            <p>Course Title: Web Programming</p>
+            <p>Course Code: CSE479</p>
+            <p>Semester: Fall-2023</p>
+        </div>
+    </header>
+    <main>
+        <div id="links" class="links">
+            <!-- Links will be dynamically generated using JavaScript -->
+        </div>
+    </main>
+    <footer class="app-footer">
+        &copy; 2023 Web Programming Course
+    </footer>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Design || Web Programming</title>
+
+
+    <style>
+
+        form{
+            width: 500px;
+            border: 3px solid black;
+            box-shadow: 1px 1px 5px;
+            padding: 10px;
+        }
+
+        .input-field{
+
+            display: flex;
+            
+        }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Registration Form</h1>
+        <div class="input-field">
+          <label for="userId">User Id: </label>
+          <input id="userId" type="text" />
+        </div>
+
+        <div class="input-field">
+          <label for="password">Password: </label>
+          <input id="password" type="Password" />
+        </div>
+
+        <div class="input-field">
+          <label for="name">Name: </label>
+          <input id="name" type="text" />
+        </div>
+
+        <div class="input-field">
+          <label for="address">Address: </label>
+          <input id="address" type="text" />
+        </div>
+
+        <div class="input-field">
+          <label for="countries">Country: </label>
+          <select name="" id="countries">
+            <option value="default">(Please select a country)</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="india">India</option>
+            <option value="nepal">Nepal</option>
+            <option value="bhutan">Bhutan</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <label for="zip-code">Zip Code: </label>
+          <input id="zip-code" type="number" />
+        </div>
+
+        <div class="input-field">
+          <label for="email">Email: </label>
+          <input id="email" type="email" />
+        </div>
+
+        <div class="input-field">
+          <label for="gender">Sex: </label>
+          <input type="radio" name="gender" value="male" />Male
+          <input type="radio" name="gender" value="female" />Female
+        </div>
+
+        <div class="input-field">
+          <label for="language">Language: </label>
+          <label for="english">English</label>
+          <input id="english" type="checkbox" />
+
+          <label for="non-english">Non English</label>
+          <input id="non-english" type="checkbox" />
+        </div>
+
+        <div class="input-field">
+          <label for="about">About: </label>
+          <textarea name="" id="about" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-field">
+          <input id="submit" type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
